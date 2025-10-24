@@ -1,0 +1,27 @@
+---
+import type { TRANSITION_AFTER_PREPARATION } from 'astro:transitions/client';
+
+interface Props {
+    etiqueta: string;
+  
+}
+
+//crear una variable 
+// para recibir la etiqueta 
+// astro.props= los valores enviados del indexx
+const {etiqueta} = Astro.props;
+
+---
+
+<!--
+etiqueta input :
+se utilizan par los siguientes controles:
+- campo de testo
+-password
+-checkbox
+-boton de envio
+ES ETIQUETA CERRADA 
+-->
+<label>{etiqueta}:</label>
+
+<input />

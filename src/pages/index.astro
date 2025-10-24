@@ -1,11 +1,16 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import FormLayout
+ from "../layouts/formLayout.astro"
+import InputText from "../components/inputText.astro" 
+ 
 ---
+<FormLayout >
+ 	<h2 slot="subtitulo">ingrese informacion</h2>
 
-<Layout>
-	<Welcome />
-</Layout>
+ 	<InputText etiqueta = "nombre completo"
+	slot="caja-texto-nombre" />
+	<InputText etiqueta = "apellido completo"
+	 slot="caja-texto-apellido"/>
+	<InputText etiqueta = "correo electronico"
+	 slot= "caja-texto-email"/>
+</FormLayout>
