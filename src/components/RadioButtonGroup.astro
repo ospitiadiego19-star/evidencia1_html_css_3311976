@@ -1,0 +1,43 @@
+---
+//div : etiquta abirta 
+//tiene elementos abiertos
+//permiten espcificar propidades
+//ubicacion 
+interface Props {
+    etiqueta: string;
+  
+}
+
+//crear una variable 
+// para recibir la etiqueta 
+// astro.props= los valores enviados del indexx
+const {etiqueta} = Astro.props;
+
+---
+
+<label >
+    {etiqueta}
+
+</label>
+
+
+
+
+<div>
+   
+    <input
+     type="radio"
+     id="radio1"
+     name="rbg"
+    /> CC
+     <input
+      type="radio"
+      id="radio2"
+      name="rbg"
+    /> TI 
+     <input
+      type="radio"
+      id="radio3"
+      name="rbg"
+    />CE
+</div>
