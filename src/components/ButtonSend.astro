@@ -4,10 +4,25 @@ interface Props {
   
 }
 
-
-const {etiqueta} = Astro.props;
+//crear una variable 
+// para recibir la etiqueta 
+// astro.props= los valores enviados del indexx
+const etiqueta = Astro.props.etiqueta;
 
 ---
-<button>
+<button class="boton-envia">
     {etiqueta}
 </button>
+<style>
+     /* stilos de clase */
+     /* se aplican a los lementos */
+     /*que tengan el atributo clas */
+    /*con el mismo nombre de class*/
+  .boton-envia {background-color: aqua;
+    color: aliceblue;
+
+
+
+  }
+
+</style>

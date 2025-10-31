@@ -24,20 +24,55 @@ const {etiqueta} = Astro.props;
 
 
 <div>
-   
-    <input
+<div id = "cedula">
+<input
      type="radio"
      id="radio1"
      name="rbg"
-    /> CC
-     <input
-      type="radio"
-      id="radio2"
-      name="rbg"
-    /> TI 
+     /> <strong>CC</strong>
+
+
+</div>
+ <div>
+<div id = "tarjeta">
+<input
+     type="radio"
+     id="radio2"
+     name="rbg"
+     /> <strong>TI</strong>
+
+
+</div>
+ <div id="extranjria">
+
+    
      <input
       type="radio"
       id="radio3"
       name="rbg"
     />CE
+ </div>
+  
+
 </div>
+<style>
+ #cedula{
+        background-color: blueviolet;
+        /*display:display:
+        determina como una etiqueta en cuanto a:display:display:
+        largo,ancho,ubicacion*/;
+        display: inline;
+
+ }
+  #tarjeta{
+       background-color: rgb(143, 10, 10);
+       display: inline;
+
+
+  }
+
+
+   
+
+
+</style>
