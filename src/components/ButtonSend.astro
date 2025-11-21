@@ -1,0 +1,18 @@
+---
+      interface Props {
+        etiqueta: string;
+    }
+    const etiqueta =Astro.props.etiqueta;
+
+
+---
+<button class="boton-enviar">
+    {etiqueta}
+</button>
+
+<style>
+  .boton-enviar {
+    display: block;
+    margin: 20px 650px 0;
+  }
+</style>

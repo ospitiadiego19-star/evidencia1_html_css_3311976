@@ -1,0 +1,42 @@
+---
+import"./InputText.css";
+//Definimos las propiedades
+//que puede recibir el componente
+    interface Props {
+        etiqueta:string;
+    }
+//crear una variable
+//para recibir la etiqueta
+//Astro.props=Los valores desde
+//                  el control
+    const {etiqueta} = Astro.props ; 
+---
+<!-- Etiqueta input:
+ se utiliza para los siguientes 
+ controles:
+ -campo de texto
+ -password
+ -checrbox
+ -radio button
+ -boton de envio
+ ES ETIQUETA CERRADA
+ -->
+ <label>{etiqueta}:</label>
+ <input type="text"
+    display:block;
+    style="background-color: rgb(236, 206, 248);" />
+<style>
+  /* Aplica la fuente a TODO el formulario */
+  .formulario * {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+  }
+</style>
+
+  
+
+
+
+
+
+

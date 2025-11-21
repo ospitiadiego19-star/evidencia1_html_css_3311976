@@ -1,0 +1,83 @@
+---
+//div: etiquita abierta
+//     tienen elementos dentro
+//     permite especificar propriedades
+//     ubicacion
+
+//Definimos las propiedades
+//que puede recibir el componente
+    interface Props {
+    etiqueta:string;
+    tipo: string;
+}
+//crear una variable
+//para recibir la etiqueta
+//Astro.props=Los valores desde
+//                  el control
+    const {etiqueta} = Astro.props ; 
+---
+<label >{etiqueta}</label>
+<div class="rgb">
+    <div  id="cedula">
+        <input class="btn"
+        type="radio"
+        name="rbg"
+        id="radio1" 
+    /> 
+   C.C
+</div>
+    <div  id="tarjeta">
+        <input class="btn"
+       type="radio"
+       name="rbg"
+        id="radio2" 
+    /> 
+    T.I
+</div>
+    <div id="cedulaextranjeria">
+            <input class="btn"
+             type="radio"
+              name="rbg"
+              id="radio3" 
+        />
+     C.E
+    </div>
+    
+</div>
+<style> 
+.rgb{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 90%;
+    margin: 11px 0 6px 5px ;
+}
+
+
+
+
+
+#cedula .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+    
+
+
+  #tarjeta .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;;   
+}
+   #cedulaextranjeria .radio-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+   }
+
+
+</style>
